@@ -32,7 +32,7 @@ span {
     text-align: center;
     padding: 10px;
 }
-h3 {
+.title-color {
     font-size: 30px;
     display: flex;
     height: 100px;
@@ -42,4 +42,30 @@ h3 {
 }
 .description {
     text-align: left;
+}
+.title {
+    font-size: 30px;
+    display: flex;
+    height: 100px;    
+    align-items: center;
+    justify-content: center;
+}
+#number {
+    width: 95%;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.button-submit, .button-reset {
+    display: flex;
+    padding: 1em 2em;
+    width: 100%;
+    max-width: 150px;
+    margin: 15px auto;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    transform: translateY 50%;
+    transition: none translateY 50px yellow;
 }

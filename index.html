@@ -14,29 +14,69 @@
         </h1> 
     </header>
     <main>
-        <div class="content">
-            <h2>Welcome to KATIK</h2>
-            <br>
-            <p>"Hai Sobat, Selamat datang di KATIK! :)"
-                <br>Sebuah web apps sederhana yang menghitung luas bangun datar<br/></p>
-        <div class="persegi">Persegi</div>
-        <div class="panjang">P. Panjang</div>
+            <div class="content">
+                <h2>Welcome to KATIK</h2>
+                <br>
+                <p>"Hai Sobat, Selamat datang di KATIK! :)"
+                    <br>Sebuah web apps sederhana yang menghitung luas bangun datar<br/></p>
+            <nav>
+                <a href="#luas" class="buttn-nav">Hitung Luas</a>
+                <a href="#keliling" class="button-nav">Hitung Keliling</a>
+            </nav>
+            
+            
+        <section id="luas">  
+            <div class="title-color">
+                Luas Persegi
+            </div>
+            <img src="persegi.png">
+            <p><b>Bujur Sangkar</b></p>
+            
+            <div class="description">
+                <p>Rumus Luas Persegi adalah :</p>
+            </div>
+            <div><b>L = S x S</b></div>
+            <div class="description">
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+            </div>
+            <div class="title">
+                Hitung Luas Persegi
+            </div>
+            <input type="number" name="number" id="number" />
+            <div class="button-act">
+                <button type="submit" class="button-submit">Hitung</button>
+                <button type="reset" class="button-reset">Reset</button>
+              </div>
+        </section>
+       
         
-        <h3>
-            Luas Persegi
-        </h3>
-        <img src="persegi.png">
-        <p><b>Bujur Sangkar</b></p>
-        
-        <div class="description">
-            <p>Rumus Luas Persegi adalah :</p>
-        </div>
-        <div><b>L = S x S</b></div>
-        <div class="description">
-            <p>Di mana:</p>
-            <p>L = Luas</p>
-            <p>S = Sisi</p>
-        </div>
+        <section id="keliling">
+            <div class="title-color">
+                Keliling Persegi
+            </div>
+            <img src="persegi.png">
+            <p><b>Bujur Sangkar</b></p>
+            
+            <div class="description">
+                <p>Rumus Keliling Persegi adalah :</p>
+            </div>
+            <div><b>K = 4 x S</b></div>
+            <div class="description">
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+            </div>
+            <div class="title">
+                Hitung Luas Persegi
+            </div>
+            <input type="number" name="number" id="number" />
+            <div class="button-act">
+                <button type="submit" class="button-submit">Hitung</button>
+                <button type="reset" class="button-reset">Reset</button>
+              </div>
+        </section>
     </main>
    
 </body>
