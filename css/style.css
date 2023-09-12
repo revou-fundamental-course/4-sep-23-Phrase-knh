@@ -8,20 +8,20 @@ header {
     align-items: center;
     justify-content: center;
 }
+br {
+    line-height: 50px;
+}
 main {
-    border: 2px solid;
-    max-width: 90vw;
+    border: 2px solid black;
+    max-width: 60vw;
     margin: 1em auto;
     border-radius: 5px;
     padding: 0.5em 1.5em;
+    text-align: center;
 }
 
 span {
     font-size: 55px;
-}
-.content {
-    text-align: center;
-    border: 1px;
 }
 .persegi {
     text-align: center;
@@ -58,14 +58,47 @@ span {
 }
 .button-submit, .button-reset {
     display: flex;
-    padding: 1em 2em;
-    width: 100%;
+    padding: 10px;
+    width: 70px;
+    background-color: aqua;
     max-width: 150px;
     margin: 15px auto;
     color: black;
+    cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
     justify-content: center;
-    transform: translateY 50%;
-    transition: none translateY 50px yellow;
+}
+.button-submit:hover {
+    background-color: blue;
+}
+.button-submit:active {
+    transform: translateY(2px);
+}
+.button-reset:hover {
+    background-color: blue;
+}
+.button-reset:active {
+    transform: translateY(2px);
+}
+
+.button-nav {
+    margin: 1px auto;
+    height: 20px;
+    display: flex;
+    background-color: aqua;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.button-nav:hover {
+    background-color: blue;
 }
