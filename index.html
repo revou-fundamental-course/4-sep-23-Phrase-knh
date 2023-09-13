@@ -6,6 +6,7 @@
     <title>Kalkulator Tugas RevoU</title>
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
     <header>
@@ -13,20 +14,21 @@
             <span>KATIK </span> Kalkulator Matematik
         </h1> 
     </header>
-    <main>
+
+        <main>
                 <h2>Welcome to KATIK</h2>
-                <p>"Hai Sobat, Selamat datang di KATIK! :)"
+                <p>Selamat datang di KATIK! :)
                 <br>Sebuah web apps sederhana yang menghitung luas bangun datar
                 <br>
-                <br>Pilih perhitungan mana yang ingin Anda lakukan</p>
-            <nav>
-                <a href="#luas" class="button-nav">Hitung Luas</a>
-                <a href="#keliling" class="button-nav">Hitung Keliling</a>
+                <br id="italic">Pilih perhitungan mana yang ingin Anda lakukan</p>
+            <div class="btnSwitcher">
+                <button class="button-navLuas" onclick="LuasPage()"><a href="#WrapLuas">Hitung Luas</a></button>
+                <button class="button-navKel" onclick="KelPage()"><a href="#WrapKeliling">Hitung Keliling</a></button>
                 <br>
-            </nav>
-            
+            </div>
+        </main>
                       
-        <section id="luas">  
+        <div class="wrapperLuas" id="WrapLuas"> 
             <br>
             <div class="title-color">
                 Luas Persegi
@@ -44,18 +46,20 @@
                 <p>L = Luas</p>
                 <p>S = Sisi</p>
             </div>
-            <div class="title">
-                Hitung Luas Persegi
-            </div>
-            <input type="number" name="number" id="number" />
+            <input type="text" id="InputLuas"> 
             <div class="button-act">
-                <button type="submit" class="button-submit">Hitung</button>
+                <button type="submit" class="button-submit" onclick="countLuas()">Hitung</button>
                 <button type="reset" class="button-reset">Reset</button>
               </div>
-        </section>
+              <div class="title">
+                <p>Hasil luas Persegi adalah :</p>
+                <h3 id="OutputLuas">0</h3>
+            </div>
+        </div>
        
         
-        <section id="keliling">
+        <div class="wrapperKeliling"id="WrapKeliling">
+            <br>
             <div class="title-color">
                 Keliling Persegi
             </div>
@@ -71,16 +75,16 @@
                 <p>K = Keliling</p>
                 <p>S = Sisi</p>
             </div>
-            <div class="title">
-                Hitung Luas Persegi
-            </div>
-            <input type="number" name="number" id="number" />
+            <input type="text" id="InputKeliling"> 
             <div class="button-act">
-                <button type="submit" class="button-submit">Hitung</button>
+                <button type="submit" class="button-submit" onclick=countKeliling()>Hitung</button>
                 <button type="reset" class="button-reset">Reset</button>
-              </div>
-        </section>
-    </main>
-   
+                <div class="title">
+                    <p>Hasil Keliling Persegi adalah :</p>
+                    <h4 id="OutputKeliling">0</h4>
+                </div>  
+            </div>
+        </div>
+        <script src="js/script.js"></script>
 </body>
 </html>
