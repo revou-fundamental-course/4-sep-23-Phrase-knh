@@ -20,7 +20,7 @@
                 <p>Selamat datang di KATIK! :)
                 <br>Sebuah web apps sederhana yang menghitung luas bangun datar
                 <br>
-                <br id="italic">Pilih perhitungan mana yang ingin Anda lakukan</p>
+                <br><i>Pilih perhitungan mana yang ingin Anda lakukan</i></p>
             <div class="btnSwitcher">
                 <button class="button-navLuas" onclick="LuasPage()"><a href="#WrapLuas">Hitung Luas</a></button>
                 <button class="button-navKel" onclick="KelPage()"><a href="#WrapKeliling">Hitung Keliling</a></button>
@@ -49,7 +49,7 @@
             <input type="text" id="InputLuas"> 
             <div class="button-act">
                 <button type="submit" class="button-submit" onclick="countLuas()">Hitung</button>
-                <button type="reset" class="button-reset">Reset</button>
+                <button class="buttonResetLuas" onclick="ResetLuas()">Reset</button>
               </div>
               <div class="title">
                 <p>Hasil luas Persegi adalah :</p>
@@ -63,9 +63,9 @@
             <div class="title-color">
                 Keliling Persegi
             </div>
+            <br>
             <img src="persegi.png">
             <p><b>Bujur Sangkar</b></p>
-            
             <div class="description">
                 <p>Rumus Keliling Persegi adalah :</p>
             </div>
@@ -78,7 +78,7 @@
             <input type="text" id="InputKeliling"> 
             <div class="button-act">
                 <button type="submit" class="button-submit" onclick=countKeliling()>Hitung</button>
-                <button type="reset" class="button-reset">Reset</button>
+                <button class="buttonResetKeliling" onclick="ResetKeliling()">Reset</button>
                 <div class="title">
                     <p>Hasil Keliling Persegi adalah :</p>
                     <h4 id="OutputKeliling">0</h4>

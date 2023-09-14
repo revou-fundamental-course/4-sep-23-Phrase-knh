@@ -1,4 +1,5 @@
 body {
+    background-color: #c095e4;;
     font-family: 'Righteous'
 }
 header {
@@ -7,22 +8,28 @@ header {
     background-color: lightblue;    
     align-items: center;
     justify-content: center;
+    background-color: #ffd1d4;
+}
+head {
+    background-color: #c095e4;
 }
 .wrapperLuas {
     border: 2px solid black;
     max-width: 50vw;
     margin: 1em auto;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 0.5em 1.5em;
     text-align: center;
+    background-color: #ffa0c5;
 }
 .wrapperKeliling {
     border: 2px solid black;
     max-width: 50vw;
     margin: 1em auto;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 0.5em 1.5em;
     text-align: center;
+    background-color: #ffa0c5;
 }
 
 main {
@@ -40,44 +47,83 @@ span {
 .title-color {
     font-size: 30px;
     display: flex;
-    height: 100px;
-    background-color: lightblue;    
+    height: 70px;
+    background-color: #ffd1d4;  
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 .description {
     text-align: left;
+    line-height: 5px;
+}
+.p {
+    line-height: 5px;
 }
 .title {
     font-size: 30px;
     display: flex;
-    height: 100px;    
+    height: 40px;    
     align-items: center;
     justify-content: center;
 }
-.button-submit, .button-reset {
-    display: flex;
+.button-submit{
+    
     padding: 10px;
     width: 70px;
-    background-color: aqua;
+    background-color: #ffa0c5;
     max-width: 150px;
     margin: 15px auto;
+    border-radius: 20px;
     color: black;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 20px;
     justify-content: center;
 }
 .button-submit:hover {
-    background-color: blue;
+    background-color: #ffd1d4;
 }
 .button-submit:active {
     transform: translateY(2px);
 }
-.button-reset:hover {
-    background-color: blue;
+.buttonResetLuas {
+    padding: 10px;
+    width: 70px;
+    background-color: #ffa0c5;
+    max-width: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    justify-content: center;
 }
-.button-reset:active {
+.buttonResetLuas:hover {
+    background-color: #ffd1d4;
+}
+.buttonResetLuas:active {
+    transform: translateY(2px);
+}
+.buttonResetKeliling {
+    
+    padding: 10px;
+    width: 70px;
+    background-color: #ffa0c5;
+    max-width: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    justify-content: center;
+}
+.buttonResetKeliling:hover {
+    background-color: #ffd1d4;
+}
+.buttonResetKeliling:active {
     transform: translateY(2px);
 }
 
@@ -87,7 +133,7 @@ span {
     margin: 1px auto;
     height: 20px;
     display: flex;
-    background-color: aqua;
+    background-color: #ffd1d4;
     cursor: pointer;
     justify-content: center;
     width: 150px;
@@ -96,7 +142,7 @@ span {
     font-weight: bold;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 2px solid;
 }
 .button-navKel {
@@ -104,7 +150,7 @@ span {
     margin: 1px auto;
     height: 20px;
     display: flex;
-    background-color: aqua;
+    background-color: #ffd1d4;
     cursor: pointer;
     justify-content: center;
     width: 150px;
@@ -113,12 +159,36 @@ span {
     font-weight: bold;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 2px solid;
 }
 .button-navKel:hover {
-    background-color: blue;
+    background-color: #ffa0c5;
 }
 .button-navLuas:hover {
-    background-color: blue;
+    background-color: #ffa0c5;
+}
+#InputLuas {
+    justify-items: center;
+    padding: 5px;
+    height: 30px;
+    width: 15%;
+    text-align: center;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: #ffd1d4;
+}
+#InputKeliling {
+    justify-items: center;
+    padding: 5px;
+    height: 30px;
+    width: 15%;
+    text-align: center;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: #ffd1d4;
 }

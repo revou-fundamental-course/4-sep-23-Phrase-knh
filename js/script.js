@@ -1,7 +1,7 @@
 const countLuas = () => {
   var a = document.getElementById("InputLuas").value;
   if ( a === ""){
-    document.getElementById("OutputLuas").innerHTML = "Masukkan panjang persegi";
+    document.getElementById("OutputLuas").innerHTML = "-";
   }
   else{
     var rumus = parseInt(a) * parseInt(a);
@@ -9,10 +9,19 @@ const countLuas = () => {
   }
 }
 
+function ResetLuas(){
+  document.getElementById("InputLuas").value = "";
+  document.getElementById("OutputLuas").textContent = "";}
+
+function ResetKeliling(){
+  document.getElementById("InputKeliling").value = "";
+  document.getElementById("OutputKeliling").textContent = "";}
+  
+
 const countKeliling = () => {
   var a = document.getElementById("InputKeliling").value;
   if ( a === ""){
-    document.getElementById("OutputKeliling").innerHTML = "Masukkan panjang persegi";
+    document.getElementById("OutputKeliling").innerHTML = "-";
   }
   else{
     var rumus = 4 * parseInt(a);
